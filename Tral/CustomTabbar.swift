@@ -20,33 +20,14 @@ enum Tab:String,CaseIterable {
 struct CustomTabbar: View {
     
     @Binding var selectedTab:Tab
-    
-//    private var fillImage:String {
-//        selectedTab.rawValue + "_on"
-//    }
-//    
-//    private var nofillImage:String {
-//        selectedTab.rawValue + "_off"
-//    }
-//    private var tabColor:Color {
-//        switch selectedTab {
-//        case .home:
-//            return .blue
-//        case .discover:
-//            return .green
-//        case .location:
-//            return .purple
-//        case .calendar:
-//            return .red
-//        }
-//    }
+
     
     var body: some View {
         HStack{
             ForEach(Tab.allCases , id:\.self) { item in
                 Spacer()
                 if item == .home{
-                    Image(selectedTab == item ? "home_on" : "home_off")
+                    Image(selectedTab == item ? DefineImage.HOME_ON : DefineImage.HOME_OFF)
                         .scaleEffect(selectedTab == item ? 1.25 : 1.0)
                         .font(.system(size: 22))
                         .onTapGesture {
@@ -56,7 +37,7 @@ struct CustomTabbar: View {
                         }
                     Spacer()
                 }else if item == .discover {
-                    Image(selectedTab == item ? "home_on" : "home_off")
+                    Image(selectedTab == item ? DefineImage.DIS_ON : DefineImage.DIS_OFF)
                         .scaleEffect(selectedTab == item ? 1.25 : 1.0)
                         .font(.system(size: 22))
                         .onTapGesture {
@@ -66,7 +47,7 @@ struct CustomTabbar: View {
                         }
                     Spacer()
                 }else if item == .location {
-                    Image(selectedTab == item ? "home_on" : "home_off")
+                    Image(selectedTab == item ? DefineImage.LOC_ON : DefineImage.LOC_OFF)
                         .scaleEffect(selectedTab == item ? 1.25 : 1.0)
                         .font(.system(size: 22))
                         .onTapGesture {
@@ -76,7 +57,7 @@ struct CustomTabbar: View {
                         }
                     Spacer()
                 }else if item == .calendar {
-                    Image(selectedTab == item ? "home_on" : "home_off")
+                    Image(selectedTab == item ? DefineImage.CAL_ON : DefineImage.CAL_OFF)
                         .scaleEffect(selectedTab == item ? 1.25 : 1.0)
                         .font(.system(size: 22))
                         .onTapGesture {

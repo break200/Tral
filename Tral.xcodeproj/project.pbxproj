@@ -20,6 +20,11 @@
 		FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595A2BD006F800FA622A /* LocationView.swift */; };
 		FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595C2BD0070D00FA622A /* CalendarView.swift */; };
 		FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */; };
+		FDB259612BD0580100FA622A /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259602BD0580100FA622A /* Define.swift */; };
+		FDB259632BD0588500FA622A /* DefineImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259622BD0588500FA622A /* DefineImage.swift */; };
+		FDB259852BD05E6600FA622A /* HomeTopName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259842BD05E6600FA622A /* HomeTopName.swift */; };
+		FDB259872BD060CC00FA622A /* HomeTopTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259862BD060CC00FA622A /* HomeTopTab.swift */; };
+		FDB259892BD0648000FA622A /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259882BD0648000FA622A /* ColorEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		FDB2595A2BD006F800FA622A /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		FDB2595C2BD0070D00FA622A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
+		FDB259602BD0580100FA622A /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		FDB259622BD0588500FA622A /* DefineImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineImage.swift; sourceTree = "<group>"; };
+		FDB259842BD05E6600FA622A /* HomeTopName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopName.swift; sourceTree = "<group>"; };
+		FDB259862BD060CC00FA622A /* HomeTopTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopTab.swift; sourceTree = "<group>"; };
+		FDB259882BD0648000FA622A /* ColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				FDB2594A2BCF701200FA622A /* CGFloatEx.swift */,
+				FDB259882BD0648000FA622A /* ColorEx.swift */,
 				FDB2594D2BCF703500FA622A /* ViewEx.swift */,
+				FDB259602BD0580100FA622A /* Define.swift */,
+				FDB259622BD0588500FA622A /* DefineImage.swift */,
 			);
 			name = Utills;
 			sourceTree = "<group>";
@@ -114,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB259562BD006D600FA622A /* HomeView.swift */,
+				FDB259842BD05E6600FA622A /* HomeTopName.swift */,
+				FDB259862BD060CC00FA622A /* HomeTopTab.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -215,11 +230,16 @@
 			files = (
 				FDB259392BCF6E9200FA622A /* TralApp.swift in Sources */,
 				FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */,
+				FDB259632BD0588500FA622A /* DefineImage.swift in Sources */,
 				FDB2594B2BCF701200FA622A /* CGFloatEx.swift in Sources */,
 				FDB259492BCF6F7600FA622A /* SplashView.swift in Sources */,
+				FDB259612BD0580100FA622A /* Define.swift in Sources */,
+				FDB259872BD060CC00FA622A /* HomeTopTab.swift in Sources */,
 				FDB259572BD006D600FA622A /* HomeView.swift in Sources */,
+				FDB259852BD05E6600FA622A /* HomeTopName.swift in Sources */,
 				FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */,
 				FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */,
+				FDB259892BD0648000FA622A /* ColorEx.swift in Sources */,
 				FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,
@@ -364,7 +384,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_UIUserInterfaceStyle = White;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +414,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				INFOPLIST_KEY_UIUserInterfaceStyle = White;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

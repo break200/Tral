@@ -32,8 +32,7 @@ struct MainView: View {
                 }
                 Spacer(minLength: 0)
                 CustomTabbar(selectedTab: $selectedTab)
-                    .frame(width: .infinity , height: 70)
-                    .background(Color.white)
+                    .frame(width: .screenWidth , height: 70)
             }
         }
     }
