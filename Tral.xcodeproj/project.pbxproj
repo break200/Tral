@@ -15,6 +15,10 @@
 		FDB2594B2BCF701200FA622A /* CGFloatEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2594A2BCF701200FA622A /* CGFloatEx.swift */; };
 		FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2594D2BCF703500FA622A /* ViewEx.swift */; };
 		FDB259502BD004B800FA622A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2594F2BD004B800FA622A /* MainView.swift */; };
+		FDB259572BD006D600FA622A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259562BD006D600FA622A /* HomeView.swift */; };
+		FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259582BD006E600FA622A /* DiscoverView.swift */; };
+		FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595A2BD006F800FA622A /* LocationView.swift */; };
+		FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595C2BD0070D00FA622A /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		FDB2594A2BCF701200FA622A /* CGFloatEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatEx.swift; sourceTree = "<group>"; };
 		FDB2594D2BCF703500FA622A /* ViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEx.swift; sourceTree = "<group>"; };
 		FDB2594F2BD004B800FA622A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FDB259562BD006D600FA622A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FDB259582BD006E600FA622A /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		FDB2595A2BD006F800FA622A /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		FDB2595C2BD0070D00FA622A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				FDB259382BCF6E9200FA622A /* TralApp.swift */,
 				FDB259482BCF6F7600FA622A /* SplashView.swift */,
 				FDB2594F2BD004B800FA622A /* MainView.swift */,
+				FDB259512BD0065C00FA622A /* View */,
 				FDB2594C2BCF701700FA622A /* Utills */,
 				FDB2593C2BCF6E9300FA622A /* Assets.xcassets */,
 				FDB2593E2BCF6E9300FA622A /* Preview Content */,
@@ -85,6 +94,49 @@
 				FDB2594D2BCF703500FA622A /* ViewEx.swift */,
 			);
 			name = Utills;
+			sourceTree = "<group>";
+		};
+		FDB259512BD0065C00FA622A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDB259552BD0069A00FA622A /* Calendar */,
+				FDB259542BD0068D00FA622A /* Location */,
+				FDB259532BD0067D00FA622A /* Discover */,
+				FDB259522BD0066C00FA622A /* Home */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDB259522BD0066C00FA622A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDB259562BD006D600FA622A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDB259532BD0067D00FA622A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				FDB259582BD006E600FA622A /* DiscoverView.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		FDB259542BD0068D00FA622A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2595A2BD006F800FA622A /* LocationView.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		FDB259552BD0069A00FA622A /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FDB2595C2BD0070D00FA622A /* CalendarView.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB259392BCF6E9200FA622A /* TralApp.swift in Sources */,
+				FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */,
 				FDB2594B2BCF701200FA622A /* CGFloatEx.swift in Sources */,
 				FDB259492BCF6F7600FA622A /* SplashView.swift in Sources */,
+				FDB259572BD006D600FA622A /* HomeView.swift in Sources */,
+				FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */,
+				FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,
 			);

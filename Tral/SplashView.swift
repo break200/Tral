@@ -32,6 +32,7 @@ struct SplashView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.leading  , 32)
                         .padding(.trailing , 32)
+                    
                     Spacer()
                     
                     Button  {
