@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var selectedTab: Tab = .home
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                TabView(selection: $selectedTab) {
+                    switch selectedTab {
+                    case .home:
+                        HomeView()
+                            .tag(0)
+                    case .discover:
+                        DiscoverView()
+                            .tag(1)
+                    case .location:
+                        LocationView()
+                            .tag(2)
+                    case .calendar:
+                        CalendarView()
+                            .tag(3)
+                    }
+                }
+                Spacer(minLength: 0)
+                CustomTabbar(selectedTab: $selectedTab)
+                    .frame(width: .infinity , height: 70)
+                    .background(Color.white)
+            }
+        }
     }
 }
 

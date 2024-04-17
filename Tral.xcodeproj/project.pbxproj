@@ -19,6 +19,7 @@
 		FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259582BD006E600FA622A /* DiscoverView.swift */; };
 		FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595A2BD006F800FA622A /* LocationView.swift */; };
 		FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595C2BD0070D00FA622A /* CalendarView.swift */; };
+		FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FDB259582BD006E600FA622A /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FDB2595A2BD006F800FA622A /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		FDB2595C2BD0070D00FA622A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				FDB259382BCF6E9200FA622A /* TralApp.swift */,
 				FDB259482BCF6F7600FA622A /* SplashView.swift */,
 				FDB2594F2BD004B800FA622A /* MainView.swift */,
+				FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */,
 				FDB259512BD0065C00FA622A /* View */,
 				FDB2594C2BCF701700FA622A /* Utills */,
 				FDB2593C2BCF6E9300FA622A /* Assets.xcassets */,
@@ -216,6 +219,7 @@
 				FDB259492BCF6F7600FA622A /* SplashView.swift in Sources */,
 				FDB259572BD006D600FA622A /* HomeView.swift in Sources */,
 				FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */,
+				FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */,
 				FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,
