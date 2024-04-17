@@ -22,7 +22,7 @@ struct HomeView: View {
                     case 2:
                         HomeTopTab(selectedTab: $selectedTopTab)
                     case 3:
-                        Text("First item")
+                        HomePopularView()
                     case 4:
                         Text("First item")
                     case 5:

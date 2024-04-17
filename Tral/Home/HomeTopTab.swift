@@ -33,18 +33,18 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .forest{
                                 Text("forest")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 75, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
+                                    .padding(.trailing , -10)
                             }else{
                                 Text("forest")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
+                                    .frame(width: 75, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
                                     .cornerRadius(30)
-//                                    .foregroundStyle(Color(red: 235, green: 238, blue: 238))
-                                    .foregroundStyle(Color.black)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
                             }
                         }
                     }else if item == .mountains{
@@ -53,17 +53,18 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .mountains{
                                 Text("mountains")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 105, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
+                                    .padding(.trailing , -10)
                             }else{
                                 Text("mountains")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
-                                    .cornerRadius(30)
-                                    .foregroundStyle(Color.black)
+                                    .frame(width: 105, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
+                                    .cornerRadius(8)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
                             }
                         }
                     }else if item == .beach{
@@ -72,17 +73,18 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .beach{
                                 Text("beach")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 76, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
                             }else{
                                 Text("beach")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
-                                    .cornerRadius(30)
-                                    .foregroundStyle(Color.black)
+                                    .frame(width: 76, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
+                                    .cornerRadius(8)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
+                                    .padding(.trailing , -10)
                             }
                         }
                     }else if item == .city{
@@ -91,17 +93,17 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .city{
                                 Text("city")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 59, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
                             }else{
                                 Text("city")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
-                                    .cornerRadius(30)
-                                    .foregroundStyle(Color.black)
+                                    .frame(width: 59, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
+                                    .cornerRadius(8)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
                             }
                         }
                     }else if item == .sea{
@@ -110,17 +112,17 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .sea{
                                 Text("sea")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 59, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
                             }else{
                                 Text("sea")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
-                                    .cornerRadius(30)
-                                    .foregroundStyle(Color.black)
+                                    .frame(width: 59, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
+                                    .cornerRadius(8)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
                             }
                         }
                     }else if item == .desert{
@@ -129,17 +131,17 @@ struct HomeTopTab: View {
                         }label: {
                             if selectedTab == .desert{
                                 Text("desert")
-                                    .frame(width: 134, height: 30)
+                                    .frame(width: 75, height: 30)
                                     .background(Color.black)
                                     .cornerRadius(8)
                                     .foregroundStyle(.white)
                                     .padding(.leading , 10)
                             }else{
                                 Text("desert")
-                                    .frame(width: 134, height: 30)
-//                                    .background(Color(hex: "031F2A"))
-                                    .cornerRadius(30)
-                                    .foregroundStyle(Color.black)
+                                    .frame(width: 75, height: 30)
+                                    .background(Color.init(red: 235, green: 238, blue: 238, opacity: 0.95))
+                                    .cornerRadius(8)
+                                    .foregroundStyle(Color.init(red: 159, green: 179, blue: 173, opacity: 0.95))
                             }
                         }
                     }

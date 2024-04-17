@@ -25,4 +25,10 @@ struct DefineImage {
     
     //Home
     static let PROFILE = "profile"
+    
+    static let POPULAR0 = "popular-0"
+    static let POPULAR1 = "popular-1"
+    static let POPULAR2 = "popular-2"
+    
+    
 }

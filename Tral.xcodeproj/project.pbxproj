@@ -25,6 +25,7 @@
 		FDB259852BD05E6600FA622A /* HomeTopName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259842BD05E6600FA622A /* HomeTopName.swift */; };
 		FDB259872BD060CC00FA622A /* HomeTopTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259862BD060CC00FA622A /* HomeTopTab.swift */; };
 		FDB259892BD0648000FA622A /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259882BD0648000FA622A /* ColorEx.swift */; };
+		FDB2598B2BD07C3700FA622A /* HomePopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2598A2BD07C3700FA622A /* HomePopularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		FDB259842BD05E6600FA622A /* HomeTopName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopName.swift; sourceTree = "<group>"; };
 		FDB259862BD060CC00FA622A /* HomeTopTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopTab.swift; sourceTree = "<group>"; };
 		FDB259882BD0648000FA622A /* ColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEx.swift; sourceTree = "<group>"; };
+		FDB2598A2BD07C3700FA622A /* HomePopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,8 @@
 				FDB259482BCF6F7600FA622A /* SplashView.swift */,
 				FDB2594F2BD004B800FA622A /* MainView.swift */,
 				FDB2595E2BD00B7D00FA622A /* CustomTabbar.swift */,
+				FDB2598D2BD07C5F00FA622A /* ViewModel */,
+				FDB2598C2BD07C5600FA622A /* Model */,
 				FDB259512BD0065C00FA622A /* View */,
 				FDB2594C2BCF701700FA622A /* Utills */,
 				FDB2593C2BCF6E9300FA622A /* Assets.xcassets */,
@@ -129,6 +133,7 @@
 				FDB259562BD006D600FA622A /* HomeView.swift */,
 				FDB259842BD05E6600FA622A /* HomeTopName.swift */,
 				FDB259862BD060CC00FA622A /* HomeTopTab.swift */,
+				FDB2598A2BD07C3700FA622A /* HomePopularView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -155,6 +160,20 @@
 				FDB2595C2BD0070D00FA622A /* CalendarView.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FDB2598C2BD07C5600FA622A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDB2598D2BD07C5F00FA622A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +260,7 @@
 				FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */,
 				FDB259892BD0648000FA622A /* ColorEx.swift in Sources */,
 				FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */,
+				FDB2598B2BD07C3700FA622A /* HomePopularView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,
 			);

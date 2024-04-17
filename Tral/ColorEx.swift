@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//헥사 코드
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -33,3 +34,15 @@ extension Color {
         )
     }
 }
+
+extension Color {
+    /// RGB 값을 사용하여 색상을 초기화합니다. 각 값은 0과 255 사이의 정수입니다.
+    init(red: Int, green: Int, blue: Int, opacity: Double = 1.0) {
+        self.init(.sRGB,
+                  red: Double(red) / 255.0,
+                  green: Double(green) / 255.0,
+                  blue: Double(blue) / 255.0,
+                  opacity: opacity)
+    }
+}
+
