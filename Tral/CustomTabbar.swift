@@ -69,11 +69,10 @@ struct CustomTabbar: View {
                 }
             }
         } //:HSTACK
-        .frame(width: nil, height: 60)
+        .frameWH(width: nil, height: 60)
         .background(.white)
         .cornerRadius(10)
         .offset(y: -20)
-//        .padding()
     }
 }
 
