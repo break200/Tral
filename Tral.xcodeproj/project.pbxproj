@@ -26,6 +26,7 @@
 		FDB259872BD060CC00FA622A /* HomeTopTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259862BD060CC00FA622A /* HomeTopTab.swift */; };
 		FDB259892BD0648000FA622A /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259882BD0648000FA622A /* ColorEx.swift */; };
 		FDB2598B2BD07C3700FA622A /* HomePopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2598A2BD07C3700FA622A /* HomePopularView.swift */; };
+		FDB2598F2BD081FD00FA622A /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2598E2BD081FD00FA622A /* HomeBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		FDB259862BD060CC00FA622A /* HomeTopTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopTab.swift; sourceTree = "<group>"; };
 		FDB259882BD0648000FA622A /* ColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEx.swift; sourceTree = "<group>"; };
 		FDB2598A2BD07C3700FA622A /* HomePopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopularView.swift; sourceTree = "<group>"; };
+		FDB2598E2BD081FD00FA622A /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				FDB259842BD05E6600FA622A /* HomeTopName.swift */,
 				FDB259862BD060CC00FA622A /* HomeTopTab.swift */,
 				FDB2598A2BD07C3700FA622A /* HomePopularView.swift */,
+				FDB2598E2BD081FD00FA622A /* HomeBottomView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB2598F2BD081FD00FA622A /* HomeBottomView.swift in Sources */,
 				FDB259392BCF6E9200FA622A /* TralApp.swift in Sources */,
 				FDB2595B2BD006F800FA622A /* LocationView.swift in Sources */,
 				FDB259632BD0588500FA622A /* DefineImage.swift in Sources */,

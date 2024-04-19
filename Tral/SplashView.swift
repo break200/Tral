@@ -18,6 +18,7 @@ struct SplashView: View {
             ZStack {
                 Image("logo")
                     .resizable()
+                    .ignoresSafeArea()
                 VStack(spacing: 20){
                     Spacer()
                     Text("Explore and\ndiscover new vistas")
@@ -26,12 +27,14 @@ struct SplashView: View {
                         .multilineTextAlignment(.leading)
                         .frame(maxWidth: .infinity)
                         .padding(.leading , -55)
+                        .foregroundStyle(.white)
                     Text("Browse through a large number of interesting travel albums and choose some locations for yourself. The world is waiting for you to explore")
                         .font(.system(size: 16))
                         .multilineTextAlignment(.leading)
                         .frame(maxWidth: .infinity)
                         .padding(.leading  , 32)
                         .padding(.trailing , 32)
+                        .foregroundStyle(.white)
                     
                     Spacer()
                     
@@ -50,6 +53,8 @@ struct SplashView: View {
                         .offset(y: -60)
                 }
             } //:ZSTACK
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
         }
     }
 }

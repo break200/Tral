@@ -72,7 +72,8 @@ struct CustomTabbar: View {
         .frame(width: nil, height: 60)
         .background(.white)
         .cornerRadius(10)
-        .padding()
+        .offset(y: -20)
+//        .padding()
     }
 }
 

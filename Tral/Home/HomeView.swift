@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    let listDatas = [1,2,3,4,5]
+    let listDatas = [1,2,3,4]
     
     @State private var selectedTopTab: TopTab = .forest
     
@@ -23,10 +23,9 @@ struct HomeView: View {
                         HomeTopTab(selectedTab: $selectedTopTab)
                     case 3:
                         HomePopularView()
+                            .padding(.leading )
                     case 4:
-                        Text("First item")
-                    case 5:
-                        Text("First item")
+                        HomeBottomView()
                     default:
                         Text("")
                     }

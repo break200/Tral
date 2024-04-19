@@ -30,5 +30,7 @@ struct DefineImage {
     static let POPULAR1 = "popular-1"
     static let POPULAR2 = "popular-2"
     
+    static let FEATURED0 = "featured-0"
+    static let FEATURED1 = "featured-1"
     
 }

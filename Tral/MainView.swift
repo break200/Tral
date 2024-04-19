@@ -11,6 +11,10 @@ struct MainView: View {
     
     @State private var selectedTab: Tab = .home
     
+    init() {
+        //tabview 배경색 지정
+        UITabBar.appearance().backgroundColor = UIColor.white
+    }
     var body: some View {
         ZStack {
             VStack {
@@ -29,10 +33,10 @@ struct MainView: View {
                         CalendarView()
                             .tag(3)
                     }
-                }
+                }.background(Color.clear)
                 Spacer(minLength: 0)
                 CustomTabbar(selectedTab: $selectedTab)
-                    .frame(width: .screenWidth , height: 70)
+                    .frame(width: .screenWidth , height: 0)
             }
         }
     }
