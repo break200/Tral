@@ -47,45 +47,82 @@ extension View {
 
 // 패딩
 extension View {
-    func padingLeBo(cm:CGFloat) -> some View {
-        self.padding([.leading,.bottom], cm)
+    
+    func padding(px:CGFloat) -> some View {
+        self.padding(px)
     }
     
-    func padingLRBo(cm:CGFloat) -> some View {
-        self.padding([.trailing,.bottom], cm)
+    func paddingLeadingBo(pi:CGFloat) -> some View {
+        self.padding([.leading,.bottom], pi)
     }
     
-    func padingLeTo(cm:CGFloat) -> some View {
-        self.padding([.leading,.top], cm)
+    func paddingTrailingBo(pi:CGFloat) -> some View {
+        self.padding([.trailing,.bottom], pi)
     }
     
-    func padingLRTo(cm:CGFloat) -> some View {
-        self.padding([.trailing,.top], cm)
+    func paddingLeadingTo(pi:CGFloat) -> some View {
+        self.padding([.leading,.top], pi)
     }
     
-    func paddingHorizontal(cm:CGFloat) -> some View {
-        self.padding(.horizontal , cm)
+    func paddingTrailingTo(pi:CGFloat) -> some View {
+        self.padding([.trailing,.top], pi)
     }
     
-    func paddingVertical(cm:CGFloat) -> some View {
-        self.padding(.vertical , cm)
+    func paddingHorizontal(pi:CGFloat) -> some View {
+        self.padding(.horizontal , pi)
     }
     
-    
-    func paddingLeading(cm:CGFloat) -> some View {
-        self.padding(.leading , cm)
-    }
-    
-    func paddingTrailing(cm:CGFloat) -> some View {
-        self.padding(.trailing , cm)
+    func paddingVertical(pi:CGFloat) -> some View {
+        self.padding(.vertical , pi)
     }
     
     
-    func paddingTop(cm:CGFloat) -> some View {
-        self.padding(.top , cm)
+    func paddingLeading(pi:CGFloat) -> some View {
+        self.padding(.leading , pi)
     }
     
-    func paddingBottom(cm:CGFloat) -> some View {
-        self.padding(.bottom , cm)
+    func paddingTrailing(pi:CGFloat) -> some View {
+        self.padding(.trailing , pi)
+    }
+    
+    
+    func paddingTop(pi:CGFloat) -> some View {
+        self.padding(.top , pi)
+    }
+    
+    func paddingBottom(pi:CGFloat) -> some View {
+        self.padding(.bottom , pi)
+    }
+    
+    
+    func paddingHVOther(hpi:CGFloat , vpi:CGFloat) -> some View {
+        self .padding(.horizontal,hpi).padding(.vertical,vpi)
+    }
+}
+
+// Text aliment
+extension View {
+    func textLeading() -> some View {
+        self.multilineTextAlignment(.leading)
+    }
+    
+    func textCenter() -> some View {
+        self.multilineTextAlignment(.center)
+    }
+    
+    func textTrailing() -> some View {
+        self.multilineTextAlignment(.trailing)
+    }
+    
+    func textLeadingLine(number: Int?) -> some View {
+         self.lineLimit(number).multilineTextAlignment(.leading)
+    }
+    
+    func textCenterLine(number: Int?) -> some View {
+         self.lineLimit(number).multilineTextAlignment(.center)
+    }
+
+    func textTrailingLine(number: Int?) -> some View {
+         self.lineLimit(number).multilineTextAlignment(.trailing)
     }
 }

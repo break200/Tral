@@ -8,33 +8,28 @@
 import SwiftUI
 
 struct HomeView: View {
-    let listDatas = [1,2,3,4]
     
-    @State private var selectedTopTab: TopTab = .forest
+    @ObservedObject var vm: TralViewModel
     
     var body: some View {
-        ScrollView(.vertical){
-            LazyVStack (spacing: 20) {
-                ForEach( listDatas , id: \.self){ index in
-                    switch index {
-                    case 1:
-                        HomeTopName()
-                    case 2:
-                        HomeTopTab(selectedTab: $selectedTopTab)
-                    case 3:
-                        HomePopularView()
-                            .padding(.leading )
-                    case 4:
-                        HomeBottomView()
-                    default:
-                        Text("")
-                    }
-                }
+        NavigationView{
+            List{
+                HomeHeader(vm: vm)
+                    .frame(width: .screenWidth, height: 80)
+                    .listRowSeparator(.hidden)
+                HomeHeaderTab(vm: vm)
+                    .listRowSeparator(.hidden)
+                HomeListPopularView(vm: vm)
+                    .listRowSeparator(.hidden)
+                HomeCardListView(vm: vm)
+                    .listRowSeparator(.hidden)
+                    //구분선 색 없애기
             }
+            .listStyle(.plain)
         }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(vm: TralViewModel())
 }

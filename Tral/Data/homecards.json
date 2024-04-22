@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "name": "beautiful desert",
+    "totalscore":"2.6",
+    "distance":"35 km",
+    "img": "featured-0"
+  },
+  {
+      "id": "2",
+      "name": "A cultural asset steeped in antiquity",
+      "totalscore":"3.8",
+      "distance":"135 km",
+      "img": "featured-1"
+  },
+  {
+      "id": "3",
+      "name": "endless sea",
+      "totalscore":"4.5",
+      "distance":"235 km",
+      "img": "featured-2"
+  },
+
+  {
+      "id": "4",
+      "name": "fine desert",
+      "totalscore":"1.5",
+      "distance":"45 km",
+      "img": "featured-0"
+  }
+]

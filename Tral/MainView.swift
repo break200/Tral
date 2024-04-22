@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var selectedTab: Tab = .home
+    //vm
+    @StateObject var vm:TralViewModel = TralViewModel()
     
     init() {
         //tabview 배경색 지정
@@ -18,10 +19,10 @@ struct MainView: View {
     var body: some View {
         ZStack {
             VStack {
-                TabView(selection: $selectedTab) {
-                    switch selectedTab {
+                TabView(selection: $vm.selectedTab) {
+                    switch vm.selectedTab {
                     case .home:
-                        HomeView()
+                        HomeView(vm: vm)
                             .tag(0)
                     case .discover:
                         DiscoverView()
@@ -35,7 +36,7 @@ struct MainView: View {
                     }
                 }.background(Color.clear)
                 Spacer(minLength: 0)
-                CustomTabbar(selectedTab: $selectedTab)
+                CustomTabbar(selectedTab: $vm.selectedTab)
                     .frame(width: .screenWidth , height: 0)
             }
         }

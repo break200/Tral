@@ -7,19 +7,22 @@
 
 import SwiftUI
 
-struct HomeTopName: View {
+struct HomeHeader: View {
+    
+    @ObservedObject var vm:TralViewModel
+    
     var body: some View {
         HStack{
             VStack(alignment: .leading , spacing: 10) {
-                Text("Hello, sanghee son")
+                Text(vm.home_Profile.greetings)
                     .font(.system(size: 14))
-                Text("Let's Travel")
+                Text(vm.home_Profile.desc)
                     .font(.system(size: 24))
                     .fontWeight(.bold)
             }
-            .padding(.leading , 20)
+            .paddingLeading(pi: 20)
             Spacer()
-            Image(DefineImage.PROFILE)
+            Image(vm.home_Profile.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 54, height: 54)
@@ -31,5 +34,5 @@ struct HomeTopName: View {
 }
 
 #Preview {
-    HomeTopName()
+    HomeHeader(vm: TralViewModel())
 }

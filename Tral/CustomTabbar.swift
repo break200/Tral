@@ -15,8 +15,6 @@ enum Tab:String,CaseIterable {
     case calendar
 }
 
-
-
 struct CustomTabbar: View {
     
     @Binding var selectedTab:Tab
