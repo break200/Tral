@@ -20,7 +20,11 @@ struct HomeListPopularView: View {
             ScrollView(.horizontal , showsIndicators: false){
                 LazyHStack (spacing: 20) {
                     ForEach(vm.populars){ item in
-                        HomePopularView(mo: item)
+                        NavigationLink {
+                            HomePopDetailView(mo: item)
+                        } label: {
+                            HomePopularView(mo: item)
+                        }
                     }
                 }
             }

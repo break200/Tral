@@ -13,19 +13,14 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView{
-            List{
-                HomeHeader(vm: vm)
-                    .frame(width: .screenWidth, height: 80)
-                    .listRowSeparator(.hidden)
-                HomeHeaderTab(vm: vm)
-                    .listRowSeparator(.hidden)
-                HomeListPopularView(vm: vm)
-                    .listRowSeparator(.hidden)
-                HomeCardListView(vm: vm)
-                    .listRowSeparator(.hidden)
-                    //구분선 색 없애기
-            }
-            .listStyle(.plain)
+            ScrollView(.vertical, showsIndicators: false){
+                LazyVStack {
+                    HomeHeader(vm: vm)
+                    HomeHeaderTab(vm: vm)
+                    HomeListPopularView(vm: vm)
+                    HomeCardListView(vm: vm)
+                }
+            }.paddingHorizontal(pi: 20)
         }
     }
 }

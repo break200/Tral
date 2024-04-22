@@ -16,6 +16,8 @@
 		FDA663162BD6315C00DED329 /* homepopular.json in Resources */ = {isa = PBXBuildFile; fileRef = FDA663152BD6315C00DED329 /* homepopular.json */; };
 		FDA663192BD633F100DED329 /* HomeCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663182BD633F100DED329 /* HomeCardModel.swift */; };
 		FDA6631A2BD6374C00DED329 /* homecards.json in Resources */ = {isa = PBXBuildFile; fileRef = FDA663172BD6339E00DED329 /* homecards.json */; };
+		FDA663212BD639B200DED329 /* HomeCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663202BD639B200DED329 /* HomeCardDetailView.swift */; };
+		FDA663232BD63A1C00DED329 /* HomePopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663222BD63A1C00DED329 /* HomePopDetailView.swift */; };
 		FDB259392BCF6E9200FA622A /* TralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259382BCF6E9200FA622A /* TralApp.swift */; };
 		FDB2593D2BCF6E9300FA622A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2593C2BCF6E9300FA622A /* Assets.xcassets */; };
 		FDB259402BCF6E9300FA622A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2593F2BCF6E9300FA622A /* Preview Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		FDA663152BD6315C00DED329 /* homepopular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homepopular.json; sourceTree = "<group>"; };
 		FDA663172BD6339E00DED329 /* homecards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = homecards.json; sourceTree = "<group>"; };
 		FDA663182BD633F100DED329 /* HomeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardModel.swift; sourceTree = "<group>"; };
+		FDA663202BD639B200DED329 /* HomeCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardDetailView.swift; sourceTree = "<group>"; };
+		FDA663222BD63A1C00DED329 /* HomePopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopDetailView.swift; sourceTree = "<group>"; };
 		FDB259352BCF6E9200FA622A /* Tral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB259382BCF6E9200FA622A /* TralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TralApp.swift; sourceTree = "<group>"; };
 		FDB2593C2BCF6E9300FA622A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 				FD0083962BD2AC7000ADF975 /* HomeListPopularView.swift */,
 			);
 			path = HomePopList;
+			sourceTree = "<group>";
+		};
+		FDA6631D2BD6390F00DED329 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FDA663202BD639B200DED329 /* HomeCardDetailView.swift */,
+				FDA663222BD63A1C00DED329 /* HomePopDetailView.swift */,
+			);
+			path = HomeDetail;
 			sourceTree = "<group>";
 		};
 		FDB2592C2BCF6E9200FA622A = {
@@ -184,6 +197,7 @@
 				FDB259862BD060CC00FA622A /* HomeHeaderTab.swift */,
 				FD0083982BD2D9F300ADF975 /* HomePopList */,
 				FD0083952BD2AC1500ADF975 /* HomeList */,
+				FDA6631D2BD6390F00DED329 /* HomeDetail */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -321,7 +335,9 @@
 				FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */,
 				FDB259892BD0648000FA622A /* ColorEx.swift in Sources */,
 				FDB259592BD006E600FA622A /* DiscoverView.swift in Sources */,
+				FDA663212BD639B200DED329 /* HomeCardDetailView.swift in Sources */,
 				FDB2598B2BD07C3700FA622A /* HomePopularView.swift in Sources */,
+				FDA663232BD63A1C00DED329 /* HomePopDetailView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
 				FD0083942BD2AB7100ADF975 /* HomeCardListView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,

@@ -17,7 +17,11 @@ struct HomeCardListView: View {
                 .hLeading()
             LazyVStack (spacing: 20) {
                 ForEach(vm.homecards) { item in
-                    HomeCard(mo: item)
+                    NavigationLink {
+                        HomeCardDetailView(mo: item)
+                    } label: {
+                        HomeCard(mo: item)
+                    }
                 }
             }
         }

@@ -20,14 +20,14 @@ struct HomeHeader: View {
                     .font(.system(size: 24))
                     .fontWeight(.bold)
             }
-            .paddingLeading(pi: 20)
+//            .paddingLeading(pi: 20)
             Spacer()
             Image(vm.home_Profile.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 54, height: 54)
                 .cornerRadius(54)
-                .padding(.trailing, 20)
+//                .padding(.trailing, 20)
                 
         }
     }
