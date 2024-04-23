@@ -18,6 +18,9 @@
 		FDA6631A2BD6374C00DED329 /* homecards.json in Resources */ = {isa = PBXBuildFile; fileRef = FDA663172BD6339E00DED329 /* homecards.json */; };
 		FDA663212BD639B200DED329 /* HomeCardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663202BD639B200DED329 /* HomeCardDetailView.swift */; };
 		FDA663232BD63A1C00DED329 /* HomePopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663222BD63A1C00DED329 /* HomePopDetailView.swift */; };
+		FDA663252BD65F2700DED329 /* DiscoverHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663242BD65F2700DED329 /* DiscoverHeadView.swift */; };
+		FDA663272BD6620300DED329 /* DiscoverTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA663262BD6620300DED329 /* DiscoverTopView.swift */; };
+		FDA6632A2BD6651400DED329 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = FDA663292BD6651400DED329 /* ACarousel */; };
 		FDB259392BCF6E9200FA622A /* TralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB259382BCF6E9200FA622A /* TralApp.swift */; };
 		FDB2593D2BCF6E9300FA622A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2593C2BCF6E9300FA622A /* Assets.xcassets */; };
 		FDB259402BCF6E9300FA622A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB2593F2BCF6E9300FA622A /* Preview Assets.xcassets */; };
@@ -52,6 +55,8 @@
 		FDA663182BD633F100DED329 /* HomeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardModel.swift; sourceTree = "<group>"; };
 		FDA663202BD639B200DED329 /* HomeCardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCardDetailView.swift; sourceTree = "<group>"; };
 		FDA663222BD63A1C00DED329 /* HomePopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopDetailView.swift; sourceTree = "<group>"; };
+		FDA663242BD65F2700DED329 /* DiscoverHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHeadView.swift; sourceTree = "<group>"; };
+		FDA663262BD6620300DED329 /* DiscoverTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTopView.swift; sourceTree = "<group>"; };
 		FDB259352BCF6E9200FA622A /* Tral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB259382BCF6E9200FA622A /* TralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TralApp.swift; sourceTree = "<group>"; };
 		FDB2593C2BCF6E9300FA622A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA6632A2BD6651400DED329 /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB259582BD006E600FA622A /* DiscoverView.swift */,
+				FDA663242BD65F2700DED329 /* DiscoverHeadView.swift */,
+				FDA663262BD6620300DED329 /* DiscoverTopView.swift */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
@@ -260,6 +268,9 @@
 			dependencies = (
 			);
 			name = Tral;
+			packageProductDependencies = (
+				FDA663292BD6651400DED329 /* ACarousel */,
+			);
 			productName = Tral;
 			productReference = FDB259352BCF6E9200FA622A /* Tral.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +299,9 @@
 				Base,
 			);
 			mainGroup = FDB2592C2BCF6E9200FA622A;
+			packageReferences = (
+				FDA663282BD6651400DED329 /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
 			productRefGroup = FDB259362BCF6E9200FA622A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,6 +344,7 @@
 				FDA6630D2BD5E92F00DED329 /* HomePopularModel.swift in Sources */,
 				FDB259872BD060CC00FA622A /* HomeHeaderTab.swift in Sources */,
 				FDB259572BD006D600FA622A /* HomeView.swift in Sources */,
+				FDA663272BD6620300DED329 /* DiscoverTopView.swift in Sources */,
 				FDB259852BD05E6600FA622A /* HomeHeader.swift in Sources */,
 				FDB2595D2BD0070D00FA622A /* CalendarView.swift in Sources */,
 				FDB2595F2BD00B7D00FA622A /* CustomTabbar.swift in Sources */,
@@ -339,6 +354,7 @@
 				FDB2598B2BD07C3700FA622A /* HomePopularView.swift in Sources */,
 				FDA663232BD63A1C00DED329 /* HomePopDetailView.swift in Sources */,
 				FDB259502BD004B800FA622A /* MainView.swift in Sources */,
+				FDA663252BD65F2700DED329 /* DiscoverHeadView.swift in Sources */,
 				FD0083942BD2AB7100ADF975 /* HomeCardListView.swift in Sources */,
 				FDB2594E2BCF703500FA622A /* ViewEx.swift in Sources */,
 				FD00838E2BD25B0700ADF975 /* TralViewModel.swift in Sources */,
@@ -550,6 +566,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FDA663282BD6651400DED329 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FDA663292BD6651400DED329 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FDA663282BD6651400DED329 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FDB2592D2BCF6E9200FA622A /* Project object */;
 }

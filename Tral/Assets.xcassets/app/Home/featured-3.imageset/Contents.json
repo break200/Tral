@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "image.png.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Libya_5230_Wan_Caza_Dunes_Luca_G.jpg",
+      "filename" : "image.png@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "image.png@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

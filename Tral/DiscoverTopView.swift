@@ -1,35 +1,31 @@
 //
-//  HomeTopTab.swift
+//  DiscoverTopView.swift
 //  Tral
 //
-//  Created by break200 on 4/18/24.
+//  Created by break200 on 4/22/24.
 //
 
 import SwiftUI
 
 
-enum HomeHeadTab:String,CaseIterable {
-    case forest
-    case mountains
-    case beach
-    case city
-    case sea
-    case desert
+enum DisHeadTab:String,CaseIterable {
+    case popular
+    case recommend
+    
 }
 
-
-struct HomeHeaderTab: View {
+struct DiscoverTopView: View {
     
     @ObservedObject var vm:TralViewModel
     
     var body: some View {
         ScrollView(.horizontal , showsIndicators: false){
             LazyHStack (spacing: 20) {
-                ForEach(HomeHeadTab.allCases , id: \.self){ item in
+                ForEach(DisHeadTab.allCases , id: \.self){ item in
                     Button{
-                        vm.selectedHomeTopTab = item
+                        vm.selectedDisTopTab = item
                     }label: {
-                        if vm.selectedHomeTopTab == item{
+                        if vm.selectedDisTopTab == item{
                             Text(item.rawValue)
                                 .paddingHVOther(hpi: 15, vpi: 5)
                                 .background(Color.black)
@@ -50,5 +46,5 @@ struct HomeHeaderTab: View {
 }
 
 #Preview {
-    HomeHeaderTab(vm: TralViewModel())
+    DiscoverTopView(vm: TralViewModel())
 }

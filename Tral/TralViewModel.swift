@@ -15,7 +15,7 @@ class TralViewModel:ObservableObject {
     
         //Home
         @Published var selectedTab: Tab = .home
-        @Published var selectedTopTab: HomeHeadTab = .forest
+        @Published var selectedHomeTopTab: HomeHeadTab = .forest
         @Published var toplist  = ["forest","mountains","beach","city","sea","desert" ]
         @Published var homeConfig  = ["homeProfile","mountains","beach","city","sea","desert" ]
     
@@ -25,6 +25,14 @@ class TralViewModel:ObservableObject {
         // property
         @Published var populars: [HomePopularModel]       = Bundle.main.decode("homepopular.json")
         @Published var homecards: [HomeCardModel]         = Bundle.main.decode("homecards.json") 
+    
+    
+    
+        //discover
+        @Published var dislist  = ["Popular","Recommend"]
+        @Published var selectedDisTopTab: DisHeadTab  = .popular
+        
+    
     
         // GallaryView
         @Published var selectedAnimal: String = "tiger"

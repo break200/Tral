@@ -25,7 +25,7 @@ struct MainView: View {
                         HomeView(vm: vm)
                             .tag(0)
                     case .discover:
-                        DiscoverView()
+                        DiscoverView(vm:vm)
                             .tag(1)
                     case .location:
                         LocationView()
